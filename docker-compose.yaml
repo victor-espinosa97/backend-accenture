@@ -1,4 +1,5 @@
 version: "3.8"
+
 services:
   mongo:
     image: mongo:6
@@ -16,9 +17,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - SPRING_DATA_MONGODB_HOST=mongo
-      - SPRING_DATA_MONGODB_PORT=27017
-      - SPRING_DATA_MONGODB_DATABASE=franchise_db
+      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/franchise_db
 
 volumes:
   mongo_data:

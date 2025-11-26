@@ -1,9 +1,7 @@
 spring:
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: franchise_db
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/franchise_db}
 
 server:
   port: 8080
