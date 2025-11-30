@@ -47,9 +47,6 @@ PUT /api/franchises/{franchiseId}/branches/{branchId}/products/{productId}/name
 1. `mvn clean package -DskipTests`
 2. `docker-compose up --build`
 
-## Tests
-`mvn test`
-
 ## Notas Técnicas
 - Arquitectura: Clean Architecture (domain, service, repository, controller).
 - Programación reactiva (WebFlux): se usan `Mono` y `Flux`.
